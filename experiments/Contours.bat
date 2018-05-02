@@ -1,0 +1,1 @@
+start/min dx.exe -image -data "U:\Computer Science\08965\data" -directory "U:\Computer Science\08965\nets" -program contours.net -execute -execute_on_change

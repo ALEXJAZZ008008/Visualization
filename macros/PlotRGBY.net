@@ -1,0 +1,229 @@
+//
+// time: Mon Mar 09 09:56:34 2015
+//
+// version: 3.2.0 (format), 4.4.4 (DX)
+//
+//
+// Begin MDF
+// MODULE PlotRGBY
+// CATEGORY Macros
+// DESCRIPTION separates components of RGB colour map and plots them along with luminance (Y)
+// INPUT input_1; value list or field or string or string list; (no default);  
+// OUTPUT output_1; field;  
+// End MDF
+// workspace: width = 365, height = 702
+// layout: snap = 0, width = 50, height = 50, align = NN
+//
+macro PlotRGBY(
+ input_1
+) -> (
+ output_1
+) {
+    // 
+    // node Input[1]: x = 173, y = 10, inputs = 0, label = Input
+    // parameter: position = 1, name = 'input_1', value = '(no default)', descriptive = 1, description = ' ', required = 0, visible = 1
+    //
+PlotRGBY_Input_1_out_1 = input_1;
+    // 
+    // node Compute[2]: x = 10, y = 190, inputs = 2, label = Compute
+    // input[1]: defaulting = 0, visible = 0, type = 32, value = "$0.0"
+    // expression: value = a.0
+    // name[2]: value = a
+    //
+PlotRGBY_Compute_2_out_1 = 
+    Compute(
+    "$0.0",
+    PlotRGBY_Input_1_out_1
+    ) [instance: 2, cache: 1];
+    // 
+    // node Color[1]: x = 32, y = 280, inputs = 5, label = Color
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "red"
+    //
+PlotRGBY_Color_1_out_1 = 
+    Color(
+    PlotRGBY_Compute_2_out_1,
+    "red",
+    NULL,
+    NULL,
+    NULL
+    ) [instance: 1, cache: 1];
+    // 
+    // node Options[1]: x = 56, y = 370, inputs = 3, label = Options
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "label"
+    // input[3]: defaulting = 0, visible = 1, type = 32, value = "red component"
+    //
+PlotRGBY_Options_1_out_1 = 
+    Options(
+    PlotRGBY_Color_1_out_1,
+    "label",
+    "red component"
+    ) [instance: 1, cache: 1];
+    // 
+    // node Compute[3]: x = 160, y = 100, inputs = 2, label = Compute
+    // input[1]: defaulting = 0, visible = 0, type = 32, value = "$0.1"
+    // expression: value = a.1
+    // name[2]: value = a
+    //
+PlotRGBY_Compute_3_out_1 = 
+    Compute(
+    "$0.1",
+    PlotRGBY_Input_1_out_1
+    ) [instance: 3, cache: 1];
+    // 
+    // node Color[2]: x = 182, y = 190, inputs = 5, label = Color
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "green"
+    //
+PlotRGBY_Color_2_out_1 = 
+    Color(
+    PlotRGBY_Compute_3_out_1,
+    "green",
+    NULL,
+    NULL,
+    NULL
+    ) [instance: 2, cache: 1];
+    // 
+    // node Options[2]: x = 206, y = 280, inputs = 3, label = Options
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "label"
+    // input[3]: defaulting = 0, visible = 1, type = 32, value = "green component"
+    //
+PlotRGBY_Options_2_out_1 = 
+    Options(
+    PlotRGBY_Color_2_out_1,
+    "label",
+    "green component"
+    ) [instance: 2, cache: 1];
+    // 
+    // node Compute[4]: x = 97, y = 190, inputs = 2, label = Compute
+    // input[1]: defaulting = 0, visible = 0, type = 32, value = "$0.2"
+    // expression: value = a.2
+    // name[2]: value = a
+    //
+PlotRGBY_Compute_4_out_1 = 
+    Compute(
+    "$0.2",
+    PlotRGBY_Input_1_out_1
+    ) [instance: 4, cache: 1];
+    // 
+    // node Color[3]: x = 119, y = 280, inputs = 5, label = Color
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "blue"
+    //
+PlotRGBY_Color_3_out_1 = 
+    Color(
+    PlotRGBY_Compute_4_out_1,
+    "blue",
+    NULL,
+    NULL,
+    NULL
+    ) [instance: 3, cache: 1];
+    // 
+    // node Options[3]: x = 143, y = 370, inputs = 3, label = Options
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "label"
+    // input[3]: defaulting = 0, visible = 1, type = 32, value = "blue component"
+    //
+PlotRGBY_Options_3_out_1 = 
+    Options(
+    PlotRGBY_Color_3_out_1,
+    "label",
+    "blue component"
+    ) [instance: 3, cache: 1];
+    // 
+    // node Compute[9]: x = 247, y = 100, inputs = 2, label = Compute
+    // input[1]: defaulting = 0, visible = 0, type = 32, value = "0.2126*$0.0+0.7252*$0.1+0.0722*$0.1"
+    // expression: value = 0.2126*a.0+0.7252*a.1+0.0722*a.1
+    // name[2]: value = a
+    //
+PlotRGBY_Compute_9_out_1 = 
+    Compute(
+    "0.2126*$0.0+0.7252*$0.1+0.0722*$0.1",
+    PlotRGBY_Input_1_out_1
+    ) [instance: 9, cache: 1];
+    // 
+    // node Options[4]: x = 269, y = 190, inputs = 3, label = Options
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "label"
+    // input[3]: defaulting = 0, visible = 1, type = 32, value = "luminance"
+    //
+PlotRGBY_Options_4_out_1 = 
+    Options(
+    PlotRGBY_Compute_9_out_1,
+    "label",
+    "luminance"
+    ) [instance: 4, cache: 1];
+    // 
+    // node Color[5]: x = 293, y = 280, inputs = 5, label = Color
+    // input[2]: defaulting = 0, visible = 1, type = 32, value = "white"
+    //
+PlotRGBY_Color_5_out_1 = 
+    Color(
+    PlotRGBY_Options_4_out_1,
+    "white",
+    NULL,
+    NULL,
+    NULL
+    ) [instance: 5, cache: 1];
+    // 
+    // node Collect[1]: x = 119, y = 460, inputs = 4, label = Collect
+    //
+PlotRGBY_Collect_1_out_1 = 
+    Collect(
+    PlotRGBY_Options_1_out_1,
+    PlotRGBY_Options_2_out_1,
+    PlotRGBY_Options_3_out_1,
+    PlotRGBY_Color_5_out_1
+    ) [instance: 1, cache: 1];
+    // 
+    // node Plot[2]: x = 155, y = 550, inputs = 26, label = Plot
+    // input[2]: defaulting = 0, visible = 1, type = 16777248, value = {"data value" ""}
+    // input[9]: defaulting = 0, visible = 1, type = 5, value = 0.25
+    // input[10]: defaulting = 0, visible = 0, type = 16777248, value = {"white"}
+    //
+PlotRGBY_Plot_2_out_1 = 
+    Plot(
+    PlotRGBY_Collect_1_out_1,
+    {"data value" ""},
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    0.25,
+    {"white"},
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+    ) [instance: 2, cache: 1];
+    // 
+    // node Output[1]: x = 188, y = 640, inputs = 1, label = Output
+    // parameter: position = 1, name = 'output_1', value = ' ', descriptive = 0, description = ' ', required = 0, visible = 1
+    //
+output_1 = PlotRGBY_Plot_2_out_1;
+// network: end of macro body
+}
+PlotRGBY_Input_1_out_1 = NULL;
+PlotRGBY_Compute_2_out_1 = NULL;
+PlotRGBY_Color_1_out_1 = NULL;
+PlotRGBY_Options_1_out_1 = NULL;
+PlotRGBY_Compute_3_out_1 = NULL;
+PlotRGBY_Color_2_out_1 = NULL;
+PlotRGBY_Options_2_out_1 = NULL;
+PlotRGBY_Compute_4_out_1 = NULL;
+PlotRGBY_Color_3_out_1 = NULL;
+PlotRGBY_Options_3_out_1 = NULL;
+PlotRGBY_Compute_9_out_1 = NULL;
+PlotRGBY_Options_4_out_1 = NULL;
+PlotRGBY_Color_5_out_1 = NULL;
+PlotRGBY_Collect_1_out_1 = NULL;
+PlotRGBY_Plot_2_out_1 = NULL;

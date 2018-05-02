@@ -1,0 +1,1 @@
+start/min dx.exe -image -directory "U:\Computer Science\08965\nets" -macros "U:\Computer Science\08965\nets" -program brightness-luminance.net -execute_on_change -execute

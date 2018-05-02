@@ -1,0 +1,13 @@
+file = testvol.lat
+grid = 20 x 20 x 20
+format = ascii
+interleaving = field
+majority = column
+header = lines 1
+field = scalar
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, regular, 0, 1, 0, 1, 0, 1
+
+end

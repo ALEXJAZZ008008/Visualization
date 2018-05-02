@@ -1,0 +1,1 @@
+start/min dx.exe -data "U:\Computer Science\08965\data" -directory "U:\Computer Science\08965\nets" -program heat-flux2.net

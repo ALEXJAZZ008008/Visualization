@@ -1,0 +1,1 @@
+start/min dx.exe -image -suppress -data "U:\Computer Science\08965\data" -directory "U:\Computer Science\08965\nets" -program simplevol.net -execute -execute_on_change

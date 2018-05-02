@@ -1,0 +1,13 @@
+file = dsExample1.data
+grid = 5 x 5
+format = ascii
+interleaving = field
+majority = column
+header = lines 1
+field = value
+structure = scalar
+type = short
+dependency = positions
+positions = regular, regular, 0, 1, 0, 1
+
+end

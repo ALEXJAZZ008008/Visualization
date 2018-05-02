@@ -1,0 +1,1 @@
+start/min dx.exe -directory "U:\Computer Science\08965\nets" -macros "U:\Computer Science\08965\nets" -program UsingRGBColormap.net -execute

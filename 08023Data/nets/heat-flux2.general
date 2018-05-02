@@ -1,0 +1,12 @@
+file = heat-flux2.data
+grid = 50 x 50 x 20
+format = ascii
+interleaving = field
+majority = row
+field = data
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, regular, 0, 1, 0, 1, 0, 1
+
+end
