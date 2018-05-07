@@ -1,5 +1,5 @@
 //
-// time: Fri May 04 22:50:32 2018
+// time: Sun May 06 21:44:24 2018
 //
 // version: 3.2.0 (format), 4.4.4 (DX)
 //
@@ -167,7 +167,7 @@ dov_flag = main_DXLInput_3_out_1;
 main_Receiver_3_out_1[cache: 0] = dov_flag;
     // 
     // node DXLInput[1]: x = 25, y = 125, inputs = 1, label = test_file
-    // input[1]: defaulting = 0, visible = 1, type = 32, value = "C:/Users/483446/Documents/Semester-2/Visualization/ACW/ACW3.general"
+    // input[1]: defaulting = 0, visible = 1, type = 32, value = "ACW3.general"
     // page group: import
     //
     main_DXLInput_1_out_1 = test_file;
@@ -226,7 +226,7 @@ main_Select_6_out_1 =
     // input[1]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.66315789] [0.40251572 0.65263158] [0.60062893 1.0] [1.0 1.0] [1.0 0.0] }
     // input[2]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 1.0] [1.0 1.0] }
     // input[3]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.54736842] [0.5 0.54736842] [0.5 1.0] [1.0 1.0] }
-    // input[4]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.59550562] [1.0 0.59550562] }
+    // input[4]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.6741573] [1.0 0.6741573] }
     // input[5]: defaulting = 0, visible = 0, type = 32, value = "Colormap_1"
     // input[7]: defaulting = 1, visible = 0, type = 5, value = 0.0
     // input[8]: defaulting = 1, visible = 0, type = 5, value = 1.0
@@ -235,7 +235,7 @@ main_Select_6_out_1 =
     // input[17]: defaulting = 0, visible = 0, type = 5, value = 0.0
     // input[18]: defaulting = 0, visible = 0, type = 5, value = 1.0
     // page group: describe
-    // window: position = (0.0172,0.2287), size = 0.1693x0.4167
+    // window: position = (0.0193,0.2574), size = 0.1693x0.4167
     //
 main_Colormap_1_out_1[cache: 2],
 main_Colormap_1_out_2[cache: 2] = 
@@ -1051,7 +1051,7 @@ main_Shade_1_out_1 =
     // input[41]: defaulting = 0, visible = 0, type = 32, value = "rotate"
     // page group: describe
     // depth: value = 24
-    // window: position = (0.4943,0.2287), size = 0.5000x0.9417
+    // window: position = (0.4901,0.1176), size = 0.5000x0.9417
     // internal caching: 1
     //
 main_Image_1_out_1,
@@ -1147,7 +1147,7 @@ main_Shade_2_out_1 =
     // input[41]: defaulting = 0, visible = 0, type = 32, value = "rotate"
     // page group: describe
     // depth: value = 24
-    // window: position = (0.4919,0.4120), size = 0.5000x0.9417
+    // window: position = (0.4919,0.4000), size = 0.5000x0.9417
     // internal caching: 1
     //
 main_Image_2_out_1,
@@ -1226,12 +1226,12 @@ main_Shade_3_out_1 =
     // input[1]: defaulting = 0, visible = 0, type = 67108863, value = "Image_3"
     // input[4]: defaulting = 0, visible = 0, type = 1, value = 1
     // input[5]: defaulting = 0, visible = 0, type = 8, value = [8.5 8.5 8.5]
-    // input[6]: defaulting = 0, visible = 0, type = 8, value = [81.4368 -0.221804 88.1988]
+    // input[6]: defaulting = 0, visible = 0, type = 8, value = [70.9412 23.737 95.7726]
     // input[7]: defaulting = 0, visible = 0, type = 5, value = 58.0846
     // input[8]: defaulting = 0, visible = 0, type = 1, value = 1906
     // input[9]: defaulting = 0, visible = 0, type = 5, value = 0.494
-    // input[10]: defaulting = 0, visible = 0, type = 8, value = [-0.0143005 0.992464 0.121697]
-    // input[11]: defaulting = 1, visible = 0, type = 5, value = 30.0001
+    // input[10]: defaulting = 0, visible = 0, type = 8, value = [-0.0936598 0.989964 -0.105827]
+    // input[11]: defaulting = 1, visible = 0, type = 5, value = 30.0003
     // input[12]: defaulting = 0, visible = 0, type = 1, value = 0
     // input[14]: defaulting = 0, visible = 0, type = 1, value = 1
     // input[15]: defaulting = 1, visible = 0, type = 32, value = "none"
@@ -1243,7 +1243,7 @@ main_Shade_3_out_1 =
     // input[41]: defaulting = 0, visible = 0, type = 32, value = "rotate"
     // page group: describe
     // depth: value = 24
-    // window: position = (0.4734,0.0787), size = 0.5000x0.9102
+    // window: position = (0.0612,0.1185), size = 0.5000x0.9102
     // internal caching: 1
     //
 main_Image_3_out_1,
@@ -1301,7 +1301,7 @@ main_Image_3_out_3 =
     main_Image_3_in_49
     ) [instance: 3, cache: 1];
     //
-    // decorator Annotate	pos=(0,25) size=376x54 style(Label), value = <NULL>
+    // decorator Annotate	pos=(0,25) size=427x60 style(Label), value = <NULL>
     // annotation user_begin: 192
     // annotation user: There are 3 DXLInputs: Name of data file, type of data file, a
     // annotation user: flag which is either 1 or 2 which says to Describe the data or
@@ -1386,7 +1386,7 @@ main_Caption_8_out_1 = NULL;
 DescribeOrVisualize = 2;
 main_Transmitter_2_out_1 = NULL;
 main_Receiver_3_out_1 = NULL;
-test_file = "C:/Users/483446/Documents/Semester-2/Visualization/ACW/ACW3.general";
+test_file = "ACW3.general";
 test_format = "general";
 main_Import_1_in_2 = NULL;
 main_Import_1_in_4 = NULL;
@@ -1403,7 +1403,7 @@ main_Select_6_out_1 = NULL;
 main_Colormap_1_in_1 = { [0.0 0.66315789] [0.40251572 0.65263158] [0.60062893 1.0] [1.0 1.0] [1.0 0.0] };
 main_Colormap_1_in_2 = { [0.0 1.0] [1.0 1.0] };
 main_Colormap_1_in_3 = { [0.0 0.54736842] [0.5 0.54736842] [0.5 1.0] [1.0 1.0] };
-main_Colormap_1_in_4 = { [0.0 0.59550562] [1.0 0.59550562] };
+main_Colormap_1_in_4 = { [0.0 0.6741573] [1.0 0.6741573] };
 main_Colormap_1_in_5 = "Colormap_1";
 main_Colormap_1_in_7 = NULL;
 main_Colormap_1_in_8 = NULL;
@@ -2075,11 +2075,11 @@ main_Image_3_in_1 = "Image_3";
 main_Image_3_in_3 = "X24,,";
 main_Image_3_in_4 = 1;
 main_Image_3_in_5 = [8.5 8.5 8.5];
-main_Image_3_in_6 = [81.4368 -0.221804 88.1988];
+main_Image_3_in_6 = [70.9412 23.737 95.7726];
 main_Image_3_in_7 = 58.0846;
 main_Image_3_in_8 = 1906;
 main_Image_3_in_9 = 0.494;
-main_Image_3_in_10 = [-0.0143005 0.992464 0.121697];
+main_Image_3_in_10 = [-0.0936598 0.989964 -0.105827];
 main_Image_3_in_11 = NULL;
 main_Image_3_in_12 = 0;
 main_Image_3_in_13 = NULL;
