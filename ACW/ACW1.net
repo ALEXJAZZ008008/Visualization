@@ -1,5 +1,5 @@
 //
-// time: Sun May 06 21:36:43 2018
+// time: Tue May 08 16:38:18 2018
 //
 // version: 3.2.0 (format), 4.4.4 (DX)
 //
@@ -58,9 +58,9 @@ main_Caption_2_out_1 =
     // 
     // node Pick[1]: x = 573, y = 46, inputs = 9, label = Pick_1
     // input[1]: defaulting = 0, visible = 0, type = 32, value = "Pick_1"
-    // input[2]: defaulting = 0, visible = 0, type = 32, value = "Image_1"
+    // input[2]: defaulting = 0, visible = 0, type = 32, value = NULL
     // input[3]: defaulting = 0, visible = 0, type = 16777224, value = NULL
-    // input[4]: defaulting = 0, visible = 0, type = 3, value = 472
+    // input[4]: defaulting = 0, visible = 0, type = 3, value = 474
     // input[5]: defaulting = 0, visible = 1, type = 3, value = 1
     // page group: describe
     //
@@ -308,8 +308,8 @@ main_RubberSheet_2_out_1 =
     ) [instance: 2, cache: 1];
     // 
     // node Colormap[1]: x = 292, y = 437, inputs = 19, label = Colormap
-    // input[1]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.66666] [0.11949686 0.65263158] [0.11949686 0.32631579] [0.58176101 0.32631579] [0.58176101 0.0] [1.0 0.0] }
-    // input[2]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 1.0] [1.0 1.0] }
+    // input[1]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.65263158] [0.55345912 0.65263158] [0.55345912 0.32631579] [0.61006289 0.32631579] [0.61006289 0.0] [1.0 0.0] }
+    // input[2]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 0.2] [0.11949686 0.2] [0.11949686 1.0] [1.0 1.0] }
     // input[3]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 1.0] [1.0 1.0] }
     // input[4]: defaulting = 0, visible = 0, type = 16777224, value = { [0.0 1.0] [1.0 1.0] }
     // input[5]: defaulting = 0, visible = 0, type = 32, value = "Colormap_1"
@@ -322,7 +322,7 @@ main_RubberSheet_2_out_1 =
     // input[17]: defaulting = 0, visible = 0, type = 5, value = -22162.0
     // input[18]: defaulting = 0, visible = 0, type = 5, value = 15935.0
     // page group: describe
-    // window: position = (0.6130,0.2537), size = 0.1693x0.4167
+    // window: position = (0.2539,0.1963), size = 0.1693x0.4167
     //
 main_Colormap_1_out_1[cache: 2],
 main_Colormap_1_out_2[cache: 2] = 
@@ -828,12 +828,12 @@ main_Shade_1_out_1 =
     // input[1]: defaulting = 0, visible = 0, type = 67108863, value = "Image_1"
     // input[4]: defaulting = 0, visible = 0, type = 1, value = 1
     // input[5]: defaulting = 0, visible = 0, type = 8, value = [35 35 -12.454]
-    // input[6]: defaulting = 0, visible = 0, type = 8, value = [78.2632 -54.6133 433.221]
+    // input[6]: defaulting = 0, visible = 0, type = 8, value = [89.3735 -252.927 337.784]
     // input[7]: defaulting = 0, visible = 0, type = 5, value = 244.716
     // input[8]: defaulting = 0, visible = 0, type = 1, value = 1906
     // input[9]: defaulting = 0, visible = 0, type = 5, value = 0.512
-    // input[10]: defaulting = 0, visible = 0, type = 8, value = [0.0886379 0.978147 0.188075]
-    // input[11]: defaulting = 1, visible = 0, type = 5, value = 29.9998
+    // input[10]: defaulting = 0, visible = 0, type = 8, value = [-0.0989744 0.761091 0.64105]
+    // input[11]: defaulting = 1, visible = 0, type = 5, value = 30.0001
     // input[12]: defaulting = 0, visible = 0, type = 1, value = 0
     // input[14]: defaulting = 0, visible = 0, type = 1, value = 1
     // input[15]: defaulting = 1, visible = 0, type = 32, value = "none"
@@ -846,10 +846,10 @@ main_Shade_1_out_1 =
     // input[23]: defaulting = 1, visible = 0, type = 5, value = NULL
     // input[29]: defaulting = 0, visible = 0, type = 3, value = 1
     // input[30]: defaulting = 1, visible = 0, type = 16777248, value = {"1"}
-    // input[41]: defaulting = 0, visible = 0, type = 32, value = "pick"
+    // input[41]: defaulting = 0, visible = 0, type = 32, value = "rotate"
     // page group: describe
     // depth: value = 24
-    // window: position = (0.5000,0.0213), size = 0.5000x0.9417
+    // window: position = (0.5021,0.0500), size = 0.5000x0.9417
     // internal caching: 1
     //
 main_Image_1_out_1,
@@ -938,9 +938,9 @@ main_Caption_2_in_8 = [0 1];
 main_Caption_2_in_9 = NULL;
 main_Caption_2_out_1 = NULL;
 main_Pick_1_in_1 = "Pick_1";
-main_Pick_1_in_2 = "Image_1";
+main_Pick_1_in_2 = NULL;
 main_Pick_1_in_3 = NULL;
-main_Pick_1_in_4 = 472;
+main_Pick_1_in_4 = 474;
 main_Pick_1_in_5 = 1;
 main_Pick_1_in_6 = NULL;
 main_Pick_1_in_7 = NULL;
@@ -1019,8 +1019,8 @@ main_RubberSheet_2_in_2 = 0.0015;
 main_RubberSheet_2_in_3 = NULL;
 main_RubberSheet_2_in_4 = NULL;
 main_RubberSheet_2_out_1 = NULL;
-main_Colormap_1_in_1 = { [0.0 0.66666] [0.11949686 0.65263158] [0.11949686 0.32631579] [0.58176101 0.32631579] [0.58176101 0.0] [1.0 0.0] };
-main_Colormap_1_in_2 = { [0.0 1.0] [1.0 1.0] };
+main_Colormap_1_in_1 = { [0.0 0.65263158] [0.55345912 0.65263158] [0.55345912 0.32631579] [0.61006289 0.32631579] [0.61006289 0.0] [1.0 0.0] };
+main_Colormap_1_in_2 = { [0.0 0.2] [0.11949686 0.2] [0.11949686 1.0] [1.0 1.0] };
 main_Colormap_1_in_3 = { [0.0 1.0] [1.0 1.0] };
 main_Colormap_1_in_4 = { [0.0 1.0] [1.0 1.0] };
 main_Colormap_1_in_5 = "Colormap_1";
@@ -1467,11 +1467,11 @@ main_Image_1_in_1 = "Image_1";
 main_Image_1_in_3 = "X24,,";
 main_Image_1_in_4 = 1;
 main_Image_1_in_5 = [35 35 -12.454];
-main_Image_1_in_6 = [78.2632 -54.6133 433.221];
+main_Image_1_in_6 = [89.3735 -252.927 337.784];
 main_Image_1_in_7 = 244.716;
 main_Image_1_in_8 = 1906;
 main_Image_1_in_9 = 0.512;
-main_Image_1_in_10 = [0.0886379 0.978147 0.188075];
+main_Image_1_in_10 = [-0.0989744 0.761091 0.64105];
 main_Image_1_in_11 = NULL;
 main_Image_1_in_12 = 0;
 main_Image_1_in_13 = NULL;
@@ -1501,7 +1501,7 @@ main_Image_1_in_37 = NULL;
 main_Image_1_in_38 = NULL;
 main_Image_1_in_39 = NULL;
 main_Image_1_in_40 = NULL;
-main_Image_1_in_41 = "pick";
+main_Image_1_in_41 = "rotate";
 main_Image_1_in_42 = NULL;
 main_Image_1_in_43 = NULL;
 main_Image_1_in_44 = NULL;
