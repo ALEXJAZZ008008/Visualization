@@ -1,0 +1,1 @@
+start/min dx.exe -image -program ACW5.net -execute -execute_on_change
