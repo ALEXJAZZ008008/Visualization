@@ -1,0 +1,11 @@
+file = flow.data
+grid = 40 x 20 x 10
+format = ascii
+interleaving = field
+majority = column
+header = lines 3
+field = locations, Flow
+structure = 3-vector, 3-vector
+type = float, float
+
+end

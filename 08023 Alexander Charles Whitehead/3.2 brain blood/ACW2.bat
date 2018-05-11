@@ -1,0 +1,1 @@
+start/min dx.exe -image -program ACW2.net -execute -execute_on_change
